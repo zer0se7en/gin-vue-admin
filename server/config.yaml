@@ -54,11 +54,11 @@ captcha:
 
 # mysql connect configuration
 mysql:
-  path: '127.0.0.1:3306'
-  config: 'charset=utf8mb4&parseTime=True&loc=Local'
-  db-name: 'qmPlus'
-  username: 'root'
-  password: 'Aa@6447985'
+  path: ''
+  config: ''
+  db-name: ''
+  username: ''
+  password: ''
   max-idle-conns: 10
   max-open-conns: 100
   log-mode: false
@@ -77,3 +77,25 @@ qiniu:
   access-key: '25j8dYBZ2wuiy0yhwShytjZDTX662b8xiFguwxzZ'
   secret-key: 'pgdbqEsf7ooZh7W3xokP833h3dZ_VecFXPDeG5JY'
   use-cdn-domains: false
+
+
+# aliyun oss configuration
+aliyun-oss:
+  endpoint: 'yourEndpoint'
+  access-key-id: 'yourAccessKeyId'
+  access-key-secret: 'yourAccessKeySecret'
+  bucket-name: 'yourBucketName'
+  bucket-url: 'yourBucketUrl'
+
+# tencent cos configuration
+tencent-cos:
+  bucket: 'xxxxx-10005608'
+  region: 'ap-shanghai'
+  secret-id: 'xxxxxxxx'
+  secret-key: 'xxxxxxxx'
+  base-url: 'https://gin.vue.admin'
+  path-prefix: 'gin-vue-admin'
+
+# excel configuration
+excel:
+  dir: './resource/excel/'
