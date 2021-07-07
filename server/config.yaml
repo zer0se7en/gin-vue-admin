@@ -53,6 +53,7 @@ captcha:
   img-height: 80
 
 # mysql connect configuration
+# 未初始化之前请勿手动修改数据库信息！！！如果一定要手动初始化请看（https://www.gin-vue-admin.com/docs/first）
 mysql:
   path: ''
   config: ''
@@ -120,7 +121,8 @@ excel:
 
 # timer task db clear table
 Timer:
-  spec: "@daily"  # 定时任务详细配置参考 https://pkg.go.dev/github.com/robfig/cron?utm_source=godoc
+  start: true
+  spec: "@daily"  # 定时任务详细配置参考 https://pkg.go.dev/github.com/robfig/cron/v3
   detail: [
     # tableName: 需要清理的表名
     # compareField: 需要比较时间的字段
